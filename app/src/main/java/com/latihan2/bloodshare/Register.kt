@@ -37,7 +37,7 @@ class Register : AppCompatActivity() {
             spinnerBlood.adapter = adapter
         }
 
-        //spinner
+        //spinner a
         ArrayAdapter.createFromResource(
             this,
             R.array.spinner_reshus,
