@@ -3,6 +3,7 @@
     <string name="Register">doesn\'t have account ? <b>Register</b></string>
     <string name="Resend">doesn\'t get the code? <b>Resend</b></string>
     <string-array name="spinner_blood_type">
+        <item>Blood Type</item>
         <item>AB</item>
         <item>A</item>
         <item>B</item>
@@ -12,6 +13,7 @@
         <item>Reshus</item>
     </string-array>
     <string-array name="spinner_job">
+        <item>Job</item>
         <item>Data Scientist</item>
         <item>Software Developer</item>
         <item> Web Developer</item>
