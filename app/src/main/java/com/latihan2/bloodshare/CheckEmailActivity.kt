@@ -15,7 +15,7 @@ class CheckEmailActivity : AppCompatActivity() {
         val intent = intent;
         val username = intent.getStringExtra("username")
         val blood = intent.getStringExtra("blood")
-
+        //Intent menuju verifiyemail
         buttonCheckEmail.setOnClickListener(View.OnClickListener {
             val intentCheckEmail : Intent = Intent(this@CheckEmailActivity,VerifiyEmailActivity::class.java)
             val us  = username

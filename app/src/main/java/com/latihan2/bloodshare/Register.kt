@@ -26,7 +26,7 @@ class Register : AppCompatActivity() {
         val spinnerReshus : Spinner = findViewById(R.id.spinner_reshus)
         val spinnerJob : Spinner = findViewById(R.id.spinner_job)
 
-
+        // memasukan String array spinner 
         ArrayAdapter.createFromResource(
             this,
             R.array.spinner_blood_type,
@@ -37,7 +37,7 @@ class Register : AppCompatActivity() {
             spinnerBlood.adapter = adapter
         }
 
-
+        //spinner a
         ArrayAdapter.createFromResource(
             this,
             R.array.spinner_reshus,
@@ -56,7 +56,7 @@ class Register : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line)
             spinnerJob.adapter = adapter
         }
-
+        //Intent dari register menuju CheckEmail activity, dan mengirimkanm data username dan darah
         buttonRegister.setOnClickListener(View.OnClickListener {
             val intentRegister : Intent = Intent(this@Register, CheckEmailActivity::class.java)
             val username = edtName.text.toString()
