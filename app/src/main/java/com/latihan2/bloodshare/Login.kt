@@ -12,7 +12,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
         val register : TextView = findViewById(R.id.tv_register)
-
+        //intent register
         register.setOnClickListener(View.OnClickListener {
             val intent : Intent = Intent(this@Login, Register::class.java)
             startActivity(intent)
