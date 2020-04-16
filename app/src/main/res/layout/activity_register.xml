@@ -28,7 +28,7 @@
         android:layout_marginTop="16dp"
         android:id="@+id/edt_username_email"
         style="@style/LeftRight"
-
+        android:inputType="textEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -39,7 +39,7 @@
         android:layout_marginTop="16dp"
         android:id="@+id/edt_username_phone"
         style="@style/LeftRight"
-
+        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Phone Number"
@@ -110,7 +110,7 @@
         android:layout_marginTop="16dp"
         android:id="@+id/edt_password_register"
         style="@style/LeftRight"
-
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -121,7 +121,7 @@
         android:layout_marginTop="16dp"
         android:id="@+id/edt_re_password_register"
         style="@style/LeftRight"
-
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Retype Password"
