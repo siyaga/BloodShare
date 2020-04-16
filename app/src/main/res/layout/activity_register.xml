@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_username_register"
+        android:hint="Username"
+
+        style="@style/LeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_username_email"
+        style="@style/LeftRight"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username_register" />
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_username_phone"
+        style="@style/LeftRight"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username_email" />
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="@style/LeftRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_username_phone">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:layout_marginRight="50dp"
+                android:buttonTint="@color/colorBlue"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue"
+                android:text="Female"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp"
+                />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/spinner_register_blood"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LeftRight"
+        app:layout_constraintTop_toBottomOf="@+id/rg_sex">
+
+
+            <Spinner
+                android:layout_alignParentLeft="true"
+                android:id="@+id/spinner_blood_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="Blood Type"
+                android:layout_alignParentStart="true" />
+
+            <Spinner
+                android:layout_alignParentRight="true"
+                android:id="@+id/spinner_reshus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="Reshus"
+                android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_password_register"
+        style="@style/LeftRight"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_register_blood" />
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/edt_re_password_register"
+        style="@style/LeftRight"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password_register" />
+    <RadioGroup
+        android:id="@+id/rg_profil"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="@style/LeftRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_re_password_register">
+
+
+            <RadioButton
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue"
+                android:text="Personal"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorBlue"
+                android:text="Organization"
+                android:textColor="@color/colorTextRegister"
+                android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:layout_marginTop="16dp"
+        android:id="@+id/spinner_job"
+        android:autofillHints="Job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LeftRight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_profil" />
+
+    <EditText
+        android:id="@+id/edt_home_address"
+        style="@style/LeftRight"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Home Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_job" />
+   <EditText
+        android:id="@+id/edt_default_location"
+        style="@style/LeftRight"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_blood_needed_location"
+        android:hint="Default Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_home_address" />
+
+    <CheckBox
+        android:layout_marginTop="16dp"
+        android:id="@+id/cb_agree"
+        android:textColor="@color/colorTextRegister"
+        android:text="Agree with Terms and Conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LeftRight"
+        app:layout_constraintTop_toBottomOf="@+id/edt_default_location" />
+
+    <Button
+        android:background="@drawable/button_background_register"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="REGISTER"
+        android:textColor="@color/colorBlue"
+        style="@style/LeftRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_agree" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

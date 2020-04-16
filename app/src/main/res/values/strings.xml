@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BloodShare</string>
+    <string name="Register">doesn\'t have account ? <b>Register</b></string>
+    <string name="Resend">doesn\'t get the code? <b>Resend</b></string>
+    <string-array name="spinner_blood_type">
+        <item>AB</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+    </string-array>
+    <string-array name="spinner_reshus">
+        <item>Reshus</item>
+    </string-array>
+    <string-array name="spinner_job">
+        <item>Data Scientist</item>
+        <item>Software Developer</item>
+        <item> Web Developer</item>
+        <item>Sales Engineer</item>
+        <item>other</item>
+    </string-array>
+</resources>

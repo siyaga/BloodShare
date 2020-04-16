@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context=".CheckEmailActivity">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:text="Almost There"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="32dp"
+        android:text="Thank You for Registering with us. One more \nstep, you need to check your email\n to active your account"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="80dp"
+        android:id="@+id/btn_check_email"
+        android:background="@drawable/button_background_login"
+        android:text="VERIFY"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        style="@style/LeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
