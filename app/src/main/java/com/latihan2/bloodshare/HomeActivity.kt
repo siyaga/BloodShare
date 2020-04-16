@@ -12,6 +12,7 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        //Intent get data
         val intent = intent;
         val user = intent.getStringExtra("username")
         val blo = intent.getStringExtra("blood")
