@@ -31,3 +31,16 @@ class HomeActivity : AppCompatActivity() {
 
     }
 }
+
+/*
+Tanggal Pengerjaan : 16 April 2020
+Deskripsi : Membuat awal project (homeactivity, check email)
+
+Tanggal Pengerjaan : 17 April 2020
+Deskripsi : Membuat login, regisgter dan verivy email)
+
+NIM : 10117157
+NAMA : ANANDA MARWANAYA PUTRA
+KELAS : IF-4
+
+ */
